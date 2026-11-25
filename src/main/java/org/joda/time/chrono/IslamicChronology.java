@@ -125,12 +125,7 @@ public final class IslamicChronology extends BasicChronology {
 
     /** The millis of 0001-01-01. */
     private static final long MILLIS_YEAR_1 = -42521587200000L;
-                                    //        -42520809600000L;
-//    long start = 0L - 278L * DateTimeConstants.MILLIS_PER_DAY;
-//    long cy = 46L * MILLIS_PER_CYCLE;  // 1381-01-01
-//    long rem = 5L * MILLIS_PER_SHORT_YEAR +
-//            3L * MILLIS_PER_LONG_YEAR;  // 1389-01-01
-
+                                    
     /** The length of the cycle of leap years. */
     private static final int CYCLE = 30;
 
@@ -601,3 +596,4 @@ public final class IslamicChronology extends BasicChronology {
         }
     }
 }
+
