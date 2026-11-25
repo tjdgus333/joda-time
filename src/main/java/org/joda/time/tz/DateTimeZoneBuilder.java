@@ -403,7 +403,6 @@ public class DateTimeZoneBuilder {
     private boolean addTransition(ArrayList<Transition> transitions, Transition tr) {
         int size = transitions.size();
         if (size == 0) {
-//            System.out.println("Adding   " + tr);
             transitions.add(tr);
             return true;
         }
@@ -1804,3 +1803,4 @@ public class DateTimeZoneBuilder {
         }
     }
 }
+
