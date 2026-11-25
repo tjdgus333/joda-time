@@ -432,8 +432,6 @@ public class DateTimeZoneBuilder {
         Transition previous = transitions.remove(size - 1);
         Transition adjusted = tr.withMillis(previous.getMillis());
 //        System.out.println("Current  " + tr);
-//        System.out.println("Previous " + previous);
-//        System.out.println("Adjusted " + adjusted);
         return addTransition(transitions, adjusted);
     }
 
@@ -1803,4 +1801,5 @@ public class DateTimeZoneBuilder {
         }
     }
 }
+
 
