@@ -1174,7 +1174,6 @@ public abstract class DateTimeZone implements Serializable {
           return earlierOrLater ? instant + diff : instant;
         }
     }
-//    System.out.println(new DateTime(transitionStart, DateTimeZone.UTC) + " " + new DateTime(transitionStart, this));
 
     //-----------------------------------------------------------------------
     /**
@@ -1365,3 +1364,4 @@ public abstract class DateTimeZone implements Serializable {
     }
 
 }
+
