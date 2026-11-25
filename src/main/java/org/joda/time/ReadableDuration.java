@@ -89,7 +89,6 @@ public interface ReadableDuration extends Comparable<ReadableDuration> {
 //     * @throws NullPointerException if the object is null
 //     * @throws ClassCastException if the given object is not supported
 //     */
-//    int compareTo(ReadableDuration obj);
 
     /**
      * Is the length of this duration equal to the duration passed in.
@@ -150,3 +149,4 @@ public interface ReadableDuration extends Comparable<ReadableDuration> {
     String toString();
 
 }
+
