@@ -168,9 +168,6 @@ public interface ReadablePartial extends Comparable<ReadablePartial> {
 //     * @throws ClassCastException if the partial is the wrong class
 //     *  or if it has field types that don't match
 //     * @throws NullPointerException if the partial is null
-//     * @since 2.0, previously on {@code AbstractPartial}
-//     */
-//    int compareTo(ReadablePartial partial);
 
     //-----------------------------------------------------------------------
     /**
@@ -185,3 +182,4 @@ public interface ReadablePartial extends Comparable<ReadablePartial> {
     String toString();
 
 }
+
