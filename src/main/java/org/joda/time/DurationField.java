@@ -290,14 +290,6 @@ public abstract class DurationField implements Comparable<DurationField> {
 //     * @param value the duration value to use for selecting a unit name
 //     * @param locale the locale to use for selecting a name, null for default
 //     */
-//    //String getUnitName(long value, Locale locale);
-//
-//    /**
-//     * Returns a localized unit name of this field, using the given value as an
-//     * aid. For example, the unit name may differ if it is plural.
-//     *
-//     * @param value the duration value to use for selecting a unit name
-//     */
 
     //------------------------------------------------------------------------
     /**
