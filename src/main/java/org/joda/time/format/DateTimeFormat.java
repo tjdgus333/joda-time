@@ -727,9 +727,7 @@ public class DateTimeFormat {
      * @return the formatter
      */
     private static DateTimeFormatter createFormatterForStyleIndex(int dateStyle, int timeStyle) {
-        int index = ((dateStyle << 2) + dateStyle) + timeStyle;  // (dateStyle * 5 + timeStyle);
-        // Should never happen but do a double check...
-        if (index >= cStyleCache.length()) {
+        int index = ((dateStyle << 2) + dateStyle) + timeStyle;                  if (index >= cStyleCache.length()) {
             return createDateTimeFormatter(dateStyle, timeStyle);
         }
         DateTimeFormatter f = cStyleCache.get(index);
@@ -905,3 +903,4 @@ public class DateTimeFormat {
         }
     }
 }
+
