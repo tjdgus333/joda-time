@@ -307,7 +307,6 @@ public abstract class DurationField implements Comparable<DurationField> {
 //     * default
 //     * @return the maximum name length
 //     */
-//    //int getMaximumUnitNameLength(Locale locale);
 
     //------------------------------------------------------------------------
     /**
@@ -319,3 +318,4 @@ public abstract class DurationField implements Comparable<DurationField> {
     public abstract String toString();
     
 }
+
