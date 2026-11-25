@@ -311,11 +311,9 @@ public class ZoneInfoCompiler {
     }
 
     static char parseZoneChar(char c) {
-        // SPEC: Any of these forms may be followed by the letter w if the given time is local or â€œwall clockâ€ time,
+        // SPEC: Any of these forms may be followed by the letter w if the given time is local or ¡°wall clock¡± time,
         // s if the given time is standard time without any adjustment for daylight saving,
-        // or u (or g or z) if the given time is universal time;
-        // in the absence of an indicator, local (wall clock) time is assumed.
-        switch (c) {
+                        switch (c) {
         case 's': case 'S':
             // Standard time
             return 's';
@@ -873,9 +871,9 @@ public class ZoneInfoCompiler {
                     return nameFormat.substring(index + 1).intern();
                 }
             }
-            // SPEC: The pair of characters %s is used to show where the â€œvariable partâ€ of the time zone abbreviation goes.
-            // LETTER column: Gives the â€œvariable partâ€ (for example, the â€œSâ€ or â€œDâ€ in â€œESTâ€ or â€œEDTâ€) of time zone
-            // abbreviations to be used when this rule is in effect.  If this field is â€œ-â€, the variable part is null.
+            // SPEC: The pair of characters %s is used to show where the ¡°variable part¡± of the time zone abbreviation goes.
+            // LETTER column: Gives the ¡°variable part¡± (for example, the ¡°S¡± or ¡°D¡± in ¡°EST¡± or ¡°EDT¡±) of time zone
+            // abbreviations to be used when this rule is in effect.  If this field is ¡°-¡±, the variable part is null.
             // (the "-" was removed in parsing)
             index = nameFormat.indexOf("%s");
             if (index >= 0) {
@@ -885,7 +883,7 @@ public class ZoneInfoCompiler {
                 return name.intern();
             }
             // SPEC: Alternatively, a format can use the pair of characters %z to stand for the UT
-            // offset in the form Â±hh, Â±hhmm, or Â±hhmmss, using the shortest form that does not lose information,
+            // offset in the form ¡¾hh, ¡¾hhmm, or ¡¾hhmmss, using the shortest form that does not lose information,
             // where hh, mm, and ss are the hours, minutes, and seconds east (+) or west (-) of UT.
             if (nameFormat.equals("%z")) {
                 if (saveMillis == 0) {
@@ -1105,4 +1103,5 @@ public class ZoneInfoCompiler {
         }
     }
 }
+
 
