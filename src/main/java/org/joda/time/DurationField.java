@@ -281,7 +281,6 @@ public abstract class DurationField implements Comparable<DurationField> {
 //     * @throws NullPointerException if the object is null
 //     * @throws ClassCastException if the object type is not supported
 //     */
-//    public abstract int compareTo(DurationField durationField);
 
 //    /**
 //     * Returns a localized unit name of this field, using the given value as an
@@ -301,4 +300,5 @@ public abstract class DurationField implements Comparable<DurationField> {
     public abstract String toString();
     
 }
+
 
