@@ -107,7 +107,6 @@ public interface ReadableInstant extends Comparable<ReadableInstant> {
 //     * @throws NullPointerException if the object is null
 //     * @throws ClassCastException if the object type is not supported
 //     */
-//    int compareTo(ReadableInstant readableInstant);
 
     //-----------------------------------------------------------------------
     /**
@@ -179,3 +178,4 @@ public interface ReadableInstant extends Comparable<ReadableInstant> {
     String toString();
 
 }
+
